@@ -1,8 +1,6 @@
 # Serial Communication Protocols
-Protocol conversion unit : A pcu which enables communication between spi and i2c interfaces.
 
-
-PCU=>  [spi <=> i2c ]
+I2C:
 
 Inter-Integrated Circuit or Two wire interface is a serial Communication Protocol which is half Duplex. Widely used for short distance, intra-board communication.
 I2C connects devices like Microcontrollers, EEPROMS, A/D and D/A converters, I/O interfaces and other similar peripheral interfaces in Embedded Systems.
