@@ -1,4 +1,4 @@
-# PCU
+# Serial Communication Protocols
 Protocol conversion unit : A pcu which enables communication between spi and i2c interfaces.
 
 
