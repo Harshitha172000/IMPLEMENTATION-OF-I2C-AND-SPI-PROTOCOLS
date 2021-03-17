@@ -93,7 +93,7 @@ module SPI_SLAVE
     end
     else
     begin
-     .
+     
       r2_RX_Done <= r_RX_Done;
 
       r3_RX_Done <= r2_RX_Done;
