@@ -1,4 +1,4 @@
-# Serial Communication Protocols
+# Implementation of I2C and SPI Protocols
 
 I2C:
 
