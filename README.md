@@ -33,11 +33,11 @@ Some important featues of SPI protocol:
  
 1. *Data transmission:* The SPI bus operates with single master device and one or multiple slave devices.
 2. *SPI operating modes*: Usually there are four modes of operation. 
-                          Mode 1: Clock Polarity- 0 and Data captured at rising edge (1)
-                          Mode 2: Clock Polarity- 0 and Data captured at falling edge (0)
-                          Mode 3: Clock Polarity- 1 and Data captured at falling edge (0)
-                          Mode 4: Clock Polarity- 1 and Data captured at rising edge (1)
-                          In our design, SPI mode can be configured easily, by selecting clock phase and polarity. 
+                         * Mode 1: Clock Polarity- 0 and Data captured at rising edge (1)
+                         * Mode 2: Clock Polarity- 0 and Data captured at falling edge (0)
+                         * Mode 3: Clock Polarity- 1 and Data captured at falling edge (0)
+                         * Mode 4: Clock Polarity- 1 and Data captured at rising edge (1)
+   In our design, SPI mode can be configured easily, by selecting clock phase and polarity. 
 
 ## Implementation:
 
