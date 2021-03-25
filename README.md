@@ -27,10 +27,10 @@ Serial Peripheral Interface is a synchronous serial communication interface spec
 
 ## Implementation:
 
-1.**Implementation of I2C master and slave:**
+1. **Implementation of I2C master and slave:**
 
 The initial steps of the implementation of the project was with the start of the implementation of the I2C master and slave codes in a simulation IDE. The codes were built in verilog language. Initial codes for master and slave were developed and was tested repeatedly and modified for various test bench to get precise outputs. The clock cycles were kept slow to match the actual behavior of I2C.
 
-2.**Implementation of SPI master and slave:**
+2. **Implementation of SPI master and slave:**
 
-Once the I2C codes and test bench was precised the focus was shifted towards SPI. The objectice was to develop SPI master and slave using verilog. Codes were developed and checked repeatedly with various test bench to to get the output precisely.
+Once the I2C codes and test bench was precised the focus was shifted towards SPI. The objectice was to develop SPI master and slave using verilog. Codes were developed and checked repeatedly with various test bench to get the output precisely.
