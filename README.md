@@ -41,9 +41,9 @@ Some important featues of SPI protocol:
 
 1. **Implementation of I2C master and slave:**
 
-Initially, we focussed on I2C master and slave design. First, i2c master FSM was written, and it was written in verilog Hardware Description language (HDL). Later, test bench was written to verify that. Then we moved on to implement i2c slave verilog code and its test bench. Finally, test bench was written to analyse the communication between i2c master and slave. We did functional simulation with various test inputs to verify i2c master and slave communication. 
+Initially, we focussed on I2C master design. First, i2c master FSM was written, and it was written in verilog Hardware Description language (HDL). Later, test bench was written to verify its working. Then we moved on to implement i2c slave. Finally, test bench was written to analyse the communication between i2c master and slave. We did functional simulation with various test inputs to verify i2c master and slave communication. 
 
 
 2. **Implementation of SPI master and slave:**
 
-We haven't used any state machine in our SPI design. SPI master and slave generates its own clock based on the mode choosen. We can specify mode of operation in testbench. As in case of I2C design we started with master, tested it. Then, we focussed on slave design. In fact, it's easier to design slave once we are done with master design. Here, we came across clock domain crossing concept. In order to capture data at active edge of spi clk, we expanded the signal using temperorary registers. Finally, we integrated both of these modules to test its working. 
+We haven't used any state machine in our SPI design. SPI master and slave generates its own clock based on the mode of operation choosen. We can specify mode of operation in testbench. We first started with master design. Then, we focussed on slave design. In fact, it's easier to design slave once we are done with master design. Here, we came across clock domain crossing concept. In order to capture data at active edge of spi clk, we expanded the signal using temperorary registers. Finally, we integrated both of these modules to test its working. 
