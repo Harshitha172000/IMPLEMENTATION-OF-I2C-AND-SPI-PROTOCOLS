@@ -8,6 +8,8 @@
 Inter-Integrated Circuit or Two wire interface is a serial Communication Protocol which is half Duplex. Widely used for short distance, intra-board communication.
 I2C connects devices like Microcontrollers, EEPROMS, A/D and D/A converters, I/O interfaces and other similar peripheral interfaces in Embedded Systems.
 
+
+
 *TRANSMISSION OF DATA IN I2C BUS*
 
 1. *IDEAL STATE:* When no data is transmitted between master and slave then SDA and SCL lines are at high logic.
