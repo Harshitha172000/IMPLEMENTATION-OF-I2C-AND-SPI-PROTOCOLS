@@ -24,10 +24,10 @@ Serial Peripheral Interface is a synchronous serial communication interface spec
 
 Some important featues of SPI protocol:
 
-1. Serial Protocol Communication
-2. Four wire interface
-3. Full-Duplex
-4. Can transmit data up to 60Mbps
+* Serial Protocol Communication
+* Four wire interface
+* Full-Duplex
+* Can transmit data up to 60Mbps
  
 1. *Data transmission:* The SPI bus operates with single master device and one or multiple slave devices.
 2. *SPI operating modes*: Usually there are four modes of operation. 
