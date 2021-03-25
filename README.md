@@ -22,15 +22,28 @@ I2C connects devices like Microcontrollers, EEPROMS, A/D and D/A converters, I/O
 
 Serial Peripheral Interface is a synchronous serial communication interface specification used for short-distance communication primarily in embedded systems. Chips, microprocessors and FGPA based designs uses SPI to communicate between internal components in a more faster and efficient way.
 
+Some important featues of SPI protocol:
+
+1. Serial Protocol Communication
+2. Four wire interface
+3. Full-Duplex
+4. Can transmit data up to 60Mbps
+ 
 1. *Data transmission:* The SPI bus operates with single master device and one or multiple slave devices.
-2. *Modes numbers of SPI*: The combinations of clock polarity and phase are often referred to as modes.
+2. *SPI operating modes*: Usually there are four modes of operation. 
+                          Mode 1: Clock Polarity- 0 and Data captured at rising edge (1)
+                          Mode 2: Clock Polarity- 0 and Data captured at falling edge (0)
+                          Mode 3: Clock Polarity- 1 and Data captured at falling edge (0)
+                          Mode 4: Clock Polarity- 1 and Data captured at rising edge (1)
+                          In our design, SPI mode can be configured easily, by selecting clock phase and polarity. 
 
 ## Implementation:
 
 1. **Implementation of I2C master and slave:**
 
-The initial steps of the implementation of the project was with the start of the implementation of the I2C master and slave codes in a simulation IDE. The codes were built in verilog language. Initial codes for master and slave were developed and was tested repeatedly and modified for various test bench to get precise outputs. The clock cycles were kept slow to match the actual behavior of I2C.
+Initially, we focussed on I2C master and slave design. First, i2c master FSM was written, and it was written in verilog Hardware Description language (HDL). Later, test bench was written to verify that. Then we moved on to implement i2c slave verilog code and its test bench. Finally, test bench was written to analyse the communication between i2c master and slave. We did functional simulation with various test inputs to verify i2c master and slave communication. 
+
 
 2. **Implementation of SPI master and slave:**
 
-Once the I2C codes and test bench was precised the focus was shifted towards SPI. The objectice was to develop SPI master and slave using verilog. Codes were developed and checked repeatedly with various test bench to get the output precisely.
+We haven't used any state machine in our SPI design. SPI master and slave generates its own clock based on the mode choosen. We can specify mode of operation in testbench. As in case of I2C design we started with master, tested it. Then, we focussed on slave design. In fact, it's easier to design slave once we are done with master design. Here, we came across clock domain crossing concept. In order to capture data at active edge of spi clk, we expanded the signal using temperorary registers. Finally, we integrated both of these modules to test its working. 
